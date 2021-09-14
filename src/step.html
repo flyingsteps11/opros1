@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opros">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Opros</title>
+</head>
+
+<body>
+@@include('_header.html')
+<main class="main__question">
+    <form class="main__form" action="#">
+        <div class="form__wrapper form-step1">
+            <div class="form-step">
+                <div class="range__wrapper">
+                    <input class="slider1 slider" type="range" min="1" max="3" value="1" step="1"/>
+                </div>
+                <div class="main__form-wrapper">
+                    <div class="main__form-title">
+                        <span>Шаг 1</span> из 3
+                    </div>
+                    <p class="main__form-text">Название СТО</p>
+                    <input class="input1" type="text"/>
+                    <p class="main__form-text">Адрес, город</p>
+                    <input class="input2" type="text"/>
+                    <p class="main__form-text">Телефон</p>
+                    <input class="input3" type="tel"/>
+                    <p class="main__form-text">Имя, должность </p>
+                    <input class="input4" type="text"/>
+                    <div class="button__wrapper">
+                        <a class="next next1">
+                            Вперед
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangle-form" alt="" src="img/form-rectangle.svg">
+        </div>
+        <div class="custom-preloader remove-loader">
+            <div class="circle"></div>
+        </div>
+        <div class="form__wrapper form-step2">
+            <div class="form-step">
+                <div class="range__wrapper">
+                    <input class="slider1 slider" type="range" min="1" max="3" value="2" step="1"/>
+                </div>
+                <div class="main__form-wrapper">
+                    <div class="main__form-title">
+                        <span>Шаг 2</span> из 3
+                    </div>
+                    <p class="main__form-text">Основной профиль работы СТО</p>
+                    <input class="input5" type="text"/>
+                    <p class="main__form-text">Есть ли прошивка, чип тюнинг?</p>
+                    <label class="container-radio">Да
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">Нет
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="form-text-wrap">
+                        <p class="main__form-text">Свой специалист в сто или партнерские отношения?</p>
+                        <input class="input6" type="text"/>
+                    </div>
+                    <p class="main__form-text">Ставите ли пламегасители/стронгеры/ввариваете трубы/рем.каты</p>
+                    <input class="input7" type="text"/>
+                    <p class="main__form-text">Доплачиваете ли клиентам за удаление катализатора?</p>
+                    <label class="container-radio">Да
+                        <input type="radio" checked="checked" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-radio">Нет
+                        <input type="radio" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="button__wrapper">
+                        <a class="next next2">
+                            Вперед
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangle-form rectangle-form2" alt="" src="img/form-rectangle.svg">
+        </div>
+        <div class="form__wrapper form-step3">
+            <div class="form-step">
+                <div class="range__wrapper">
+                    <input class="slider1 slider" type="range" min="1" max="3" value="3" step="1"/>
+                </div>
+                <div class="main__form-wrapper">
+                    <div class="main__form-title">
+                        <span>Шаг 3</span> из 3
+                    </div>
+                    <p class="main__form-text">Сколько в среднем авто в день на удаление ката обслуживаете? </p>
+                    <input class="input8" type="text"/>
+                    <p class="main__form-text">Сколько максимально можете обслужить?</p>
+                    <input class="input9" type="text"/>
+                    <p class="main__form-text">Продвигаетесь ли сами? Маркетинг, реклама? </p>
+                    <input class="input10" type="text"/>
+                    <p class="main__form-text">Сколько в среднем кг в месяц сдаете? (для оценки объема и возможных
+                        бонусов и
+                        выгодных цен)</p>
+                    <input class="input11" type="text"/>
+                    <div class="button__wrapper">
+                        <button type="submit" class="next next3">
+                            Вступить в клуб
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangle-form rectangle-form3" alt="" src="img/form-rectangle.svg">
+        </div>
+        <div class="form__wrapper form-step4">
+            <div class="form-step form-step4-img">
+                <img alt="" src="img/connect.svg">
+                <h1>Спасибо за ваши ответы!</h1>
+                <p>Мы обработаем вашу анкету и скоро
+                    с вами свяжемся.</p>
+            </div>
+            <img class="rectangle-form rectangle-form4" alt="" src="img/form-rectangle.svg">
+        </div>
+    </form>
+</main>
+<footer>
+    <div class="container">
+        <a href="#">
+            <img class="logo-img" src="img/logo.svg" alt="">
+        </a>
+        <div class="footer__info">
+            <div class="footer__block1">
+                <p>ИП Петров</p>
+                <p>Иван Иванович</p>
+                <p>098091283981</p>
+            </div>
+            <div class="footer__block2">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="footer__block3">
+                <img src="img/phone.svg" alt="">
+                <a href="#">8 (800) 301-80-72</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
