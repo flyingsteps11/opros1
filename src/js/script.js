@@ -7,47 +7,47 @@ $(document).ready(function () {
             'background': `linear-gradient(to left,#FBFBFB ${(1 - ((val - min) / (max - min))) * 100}%, #FA0000 0%)`
         });
     });
-    $('.input1').on('input', (e) => {
+    $('.input1').on('input', () => {
         values.input1 = $('.input1').val();
         $('.input1').removeClass('warning');
     });
-    $('.input2').on('input', (e) => {
+    $('.input2').on('input', () => {
         values.input2 = $('.input2').val();
         $('.input2').removeClass('warning');
     });
-    $('.input3').on('input', (e) => {
+    $('.input3').on('input', () => {
         values.input3 = $('.input3').val();
         $('.input3').removeClass('warning');
     });
-    $('.input4').on('input', (e) => {
+    $('.input4').on('input', () => {
         values.input4 = $('.input4').val();
         $('.input4').removeClass('warning');
     });
-    $('.input5').on('input', (e) => {
+    $('.input5').on('input', () => {
         values.input5 = $('.input5').val();
         $('.input5').removeClass('warning');
     });
-    $('.input6').on('input', (e) => {
+    $('.input6').on('input', () => {
         values.input6 = $('.input6').val();
         $('.input6').removeClass('warning');
     });
-    $('.input7').on('input', (e) => {
+    $('.input7').on('input', () => {
         values.input7 = $('.input7').val();
         $('.input7').removeClass('warning');
     });
-    $('.input8').on('input', (e) => {
+    $('.input8').on('input', () => {
         values.input8 = $('.input8').val();
         $('.input8').removeClass('warning');
     });
-    $('.input9').on('input', (e) => {
+    $('.input9').on('input', () => {
         values.input9 = $('.input9').val();
         $('.input9').removeClass('warning');
     });
-    $('.input10').on('input', (e) => {
+    $('.input10').on('input', () => {
         values.input10 = $('.input10').val();
         $('.input10').removeClass('warning');
     });
-    $('.input11').on('input', (e) => {
+    $('.input11').on('input', () => {
         values.input11 = $('.input11').val();
         $('.input11').removeClass('warning');
     });
@@ -58,9 +58,10 @@ $(document).ready(function () {
         if (isCalc) {
             $('.form-step1').css('display', 'none');
             $('.custom-preloader').removeClass('remove-loader');
+            $('.main__form').addClass('form-height');
             setTimeout(() => {
                 $('.custom-preloader').addClass('remove-loader');
-
+                $('.main__form').removeClass('form-height');
                 $('.form-step2').addClass('form-display');
                 $('.slider1').css({
                     'background': `linear-gradient(to left, #FBFBFB ${50}%, #FA0000 0%)`
@@ -95,9 +96,11 @@ $(document).ready(function () {
         if (isCalc) {
             $('.form-step2').removeClass("form-display");
             $('.custom-preloader').removeClass('remove-loader');
+            $('.main__form').addClass('form-height');
             setTimeout(() => {
                 $('.custom-preloader').addClass('remove-loader');
                 $('.form-step3').addClass('form-display');
+                $('.main__form').removeClass('form-height');
                 $('.slider1').css({
                     'background': `linear-gradient(to left, #FBFBFB ${0}%, #FA0000 0%)`
                 })
@@ -125,7 +128,9 @@ $(document).ready(function () {
         if (isCalc) {
             $('.form-step3').removeClass("form-display");
             $('.custom-preloader').removeClass('remove-loader');
+            $('.main__form').addClass('form-height');
             setTimeout(() => {
+                $('.main__form').removeClass('form-height');
                 $('.custom-preloader').addClass('remove-loader');
                 $('.form-step4').addClass('form-display');
             }, 1000);
